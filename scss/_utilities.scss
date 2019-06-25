@@ -14,4 +14,20 @@
   @return ($target / $context) * 1em;
 }
 
+// Call colour palette modifiers
+@function palette ($palette, $shade: 'base') {
+  @return map-get(map-get($palettes, $palette), $shade);
+}
+
 // Mixins
+// Theme Colours
+@mixin bg-colors($map) {
+
+  @each $theme,
+  $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+
+}

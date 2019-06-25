@@ -3,8 +3,8 @@
 // ==========================================================================
 
 * {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,10 +18,11 @@ h1 {
   font-size: em(42px);
   line-height: (46px / 42px);
   margin-bottom: em(70px, 42px);
+  color: palette(grey, x-dark);
 }
 
 header {
-  text-align:center;
+  text-align: center;
   padding: em(48px) 0;
 }
 
@@ -29,4 +30,5 @@ h2 {
   font-family: $font-family--secondary;
   font-weight: $font-weight--thin;
   font-size: em(24px);
+  color: palette(grey, light);
 }

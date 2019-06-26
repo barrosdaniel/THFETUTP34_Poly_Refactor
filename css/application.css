@@ -262,6 +262,11 @@ h2 {
 
 .site-logo {
   margin-bottom: 2em;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 45px;
+  display: inline-block;
 }
 
 .btn--default,

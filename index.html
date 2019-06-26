@@ -55,18 +55,20 @@
     <button class="btn--info">Button Info</button>
 
     <h4>Form Elements</h4>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Name">
+    <form class="form">
+      <label for="name" class="form__label--hidden">Name:</label>
+      <input type="text" id="name" placeholder="Name" class="form__input">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="email@website.com">
+      <label for="email" class="form__label--hidden">Email:</label>
+      <input type="email" id="email" placeholder="email@website.com"
+        class="form__input">
 
-      <label for="msg">Message:</label>
-      <textarea class="form__input" id="msg" placeholder="Message..."
-        rows="6"></textarea>
+      <label for="msg" class="form__label--hidden">Message:</label>
+      <textarea class="form__input" id="msg" placeholder="Message..." rows="6"
+        class="form__input"></textarea>
 
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" class="btn--default">
+      <input type="reset" value="Reset" class="btn--warning">
     </form>
   </div>
 </body>

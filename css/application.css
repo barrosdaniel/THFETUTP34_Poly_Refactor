@@ -499,10 +499,14 @@ footer p {
 .img--avatar {
   display: block;
   border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 1.5em;
 }
-.img--hero {
-  margin-bottom: 2.625em;
+@media (min-width: 769px) {
+  .img--hero {
+    margin-bottom: 2.625em;
+  }
 }
 
 .headline-primary {
@@ -575,8 +579,12 @@ footer p {
 
 .navbar {
   position: relative;
-  margin-top: 3.375em;
-  margin-bottom: 0;
+}
+@media (min-width: 769px) {
+  .navbar {
+    margin-top: 3.375em;
+    margin-bottom: 0;
+  }
 }
 
 .nav {

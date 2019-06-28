@@ -14,10 +14,10 @@
         <b class="srt">Poly - UI Toolkit</b>
       </a>
       <nav class="navbar" role="navigation">
-        <span class="icn-toggle">
+        <span class="icn--nav-toggle is-displayed-mobile" id="toggle">
           <b class="srt">Toggle</b>
         </span>
-        <ul class="nav">
+        <ul class="nav is-collapsed-mobile">
           <li class="nav__item"><a href="#">Typography</a></li>
           <li class="nav__item"><a href="#">Buttons</a></li>
           <li class="nav__item"><a href="#">Forms</a></li>
@@ -30,7 +30,7 @@
     </header>
   </div>
 
-  <div class="grid">
+  <div class="grid is-hidden-mobile">
     <div class="grid__col--12">
       <img class="img--hero" src="img/hero.jpg" alt="Poly - A simple UI Kit">
     </div>
@@ -130,9 +130,19 @@
     </footer>
   </div>
   <script>
-    $('#toggle').click(function () {
-      $(this).next('.nav').toggleClass("is-collapsed-mobile");
-    });
+    const toggleButton = document.getElementById('toggle');
+    const navbar = document.querySelector('.nav');
+    console.log(navbar);
+
+    toggleButton.addEventListener('click', toggleCollapsedClass);
+
+    function toggleCollapsedClass() {
+      navbar.classList.toggle('is-hidden-mobile');
+    }
+
+    // $('#toggle').click(function () {
+    //   $(this).next('.nav').toggleClass("is-collapsed-mobile");
+    // });
   </script>
 </body>
 

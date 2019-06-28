@@ -10,6 +10,7 @@
   @include m(avatar) {
     display: block;
     border-radius: $br--round;
+    margin-top: em(24px);
   }
   @include m(hero) {
     margin-bottom: em(42px);

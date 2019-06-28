@@ -391,6 +391,10 @@ footer p {
   .grid__col--11 {
     width: 91.5%;
   }
+
+  .grid__col--12 {
+    width: 100%;
+  }
 }
 @media (min-width: 1px) and (max-width: 768px) {
   [class^=grid__col--] {
@@ -477,6 +481,7 @@ footer p {
 .img--avatar {
   display: block;
   border-radius: 50%;
+  margin-top: 1.5em;
 }
 .img--hero {
   margin-bottom: 2.625em;

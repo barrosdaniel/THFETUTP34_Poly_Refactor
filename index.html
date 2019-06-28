@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/application.css">
   </head>
   <body>
-    <div>
-      <header class="panel--padded--centered" role="banner"> 
+    <div class="grid">
+      <header class="grid__col--12 panel--padded--centered" role="banner"> 
         <a class="site-logo" href="/">
           <b class="srt">Poly - UI Toolkit</b>
         </a>
@@ -27,13 +27,16 @@
       </header> 
     </div>
     
-    <div>
-      <img class="img--hero" src="img/hero.jpg" alt="Poly - A simple UI Kit">
+    <div class="grid">
+      <div class="grid__col--12">
+        <img class="img--hero" src="img/hero.jpg" alt="Poly - A simple UI Kit">
+      </div>
     </div>
     
-    <h4>Typography</h4>
-    <div>
-      <div>
+    <h4 class="grid">Typography</h4>
+    
+    <div class="grid">
+      <div class="grid__col--8">
         <h1 class="headline-primary--grouped">Take a look at this amazing headline</h1>
         <h2 class="headline-secondary--grouped">Don't forget about the subtitle</h2>
         <p>This is a typical paragraph for the UI Kit. <a href="#">Here is what a link might look like</a>. The typical font family for this kit is Helvetica Neue.  This kit is intended for clean and refreshing web layouts. No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using italics as well from time to time</em>. Fell free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but this amazing paragraph as well. :)</p>
@@ -41,9 +44,10 @@
       </div>
     </div>
   
-    <h4>Buttons</h4>
-    <div>
-      <div>
+    <h4 class="grid">Buttons</h4>
+    
+    <div class="grid">
+      <div class="grid__col--12">
         <a class="btn--default" href="#">Button Default</a>
         <a class="btn--success" href="#">Button Success</a>
         <a class="btn--error" href="#">Button Error</a>
@@ -52,9 +56,10 @@
       </div>
     </div>
          
-    <h4>Form Elements</h4>
-    <div>
-      <div> 
+    <h4 class="grid">Form Elements</h4>
+    
+    <div class="grid">
+      <div class="grid__col--12"> 
         <form class="form">
           <label class="form__label--hidden" for="name">Name:</label> 
           <input class="form__input" type="text" id="name" placeholder="Name">
@@ -71,22 +76,24 @@
       </div>
     </div>
     
-    <h4>Media</h4>
-    <div>
-      <div>
+    <h4 class="grid">Media</h4>
+    
+    <div class="grid">
+      <div class="grid__col--5">
         <img src="img/sample.jpg" alt="sample image">
       </div>
-      <div>
+      <div class="grid__col--5">
         <img class="img--wrap" src="img/sample.jpg" alt="sample image">
       </div>
-      <div>
+      <div class="grid__col--2">
         <img class="img--avatar" src="img/avatar.png" alt="Avatar">
       </div>
     </div>
     
-    <h4>Footer</h4>
-    <div>
-      <footer class="panel--padded--centered" role="contentinfo">
+    <h4 class="grid">Footer</h4>
+    
+    <div class="grid">
+      <footer class="grid__col--12 panel--padded--centered" role="contentinfo">
         <a class="site-logo" href="#">
           <b class="srt">Poly - UI Toolkit</b>
         </a>

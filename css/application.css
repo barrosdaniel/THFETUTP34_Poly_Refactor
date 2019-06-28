@@ -345,12 +345,21 @@ footer p {
 
 .panel--centered, .panel {
   padding-top: 1.875em;
-  padding-bottom: 1.25em;
+}
+@media (min-width: 769px) {
+  .panel--centered, .panel {
+    padding-bottom: 1.25em;
+  }
 }
 
 .panel--padded--centered, .panel--padded {
-  padding-top: 5em;
-  padding-bottom: 2.125em;
+  padding-top: 2.125em;
+}
+@media (min-width: 769px) {
+  .panel--padded--centered, .panel--padded {
+    padding-top: 5em;
+    padding-bottom: 2.125em;
+  }
 }
 
 .grid {
@@ -366,40 +375,40 @@ footer p {
 }
 
 @media (min-width: 769px) {
-  .grid-col--1 {
+  .grid__col--1 {
     width: 6.5%;
   }
-  .grid-col--2 {
+  .grid__col--2 {
     width: 15%;
   }
-  .grid-col--3 {
+  .grid__col--3 {
     width: 23.5%;
   }
-  .grid-col--4 {
+  .grid__col--4 {
     width: 32%;
   }
-  .grid-col--5 {
+  .grid__col--5 {
     width: 40.5%;
   }
-  .grid-col--6 {
+  .grid__col--6 {
     width: 49%;
   }
-  .grid-col--7 {
+  .grid__col--7 {
     width: 57.5%;
   }
-  .grid-col--8 {
+  .grid__col--8 {
     width: 66%;
   }
-  .grid-col--9 {
+  .grid__col--9 {
     width: 74.5%;
   }
-  .grid-col--10 {
+  .grid__col--10 {
     width: 83%;
   }
-  .grid-col--11 {
+  .grid__col--11 {
     width: 91.5%;
   }
-  .grid-col--12 {
+  .grid__col--12 {
     width: 100%;
   }
 }
@@ -425,17 +434,27 @@ footer p {
   }
 }
 
-.nav__item--current, .nav__item {
-  display: inline-block;
-  margin: 0 0.75em;
+@media (min-width: 769px) {
+  .nav__item--current, .nav__item {
+    display: inline-block;
+    margin: 0 0.75em;
+  }
 }
 
 .nav__item--current a, .nav__item a {
-  font-size: 1.125em;
   font-weight: 300;
+  text-align: center;
+  font-size: 1.125em;
   display: block;
   padding: 0.4444444444em;
   border-bottom: 1px solid transparent;
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  .nav__item--current a, .nav__item a {
+    border-bottom-color: #ebecec;
+    padding-top: 0.7777777778em;
+    padding-bottom: 0.7777777778em;
+  }
 }
 
 .nav__item--current a, .nav__item a:hover {
@@ -580,6 +599,12 @@ footer p {
 .nav {
   margin-top: 1.25em;
   margin-bottom: 1.875em;
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .nav__item {
+    display: block;
+  }
 }
 .nav__item a {
   color: #797e83;
